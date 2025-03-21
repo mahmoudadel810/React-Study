@@ -1,12 +1,14 @@
 import React from 'react';
-import Product from './product';
+import Product from './Product';
+import shoppingCart from './shoppingCart'
 
 
 
 const App = () =>
 {
     
-    return ( <Product/> );
+    return (<Product />);
+    retutn (<shoppingCart />)
 }
  
 export default App;
