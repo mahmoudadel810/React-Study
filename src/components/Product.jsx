@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Product extends Component {
   state = {
@@ -47,7 +48,9 @@ class Product extends Component {
     return (
       <div className="row">
         <div className="col-2">
-          <span>{product.name}</span>
+          <span>
+            <Link to={`/products/${product.id}`}>{product.name}</Link>
+          </span>
         </div>
         <div className="col">
           <span className={this.getClasses()}>{product.count}</span>
